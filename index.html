@@ -106,9 +106,17 @@ img {
     <p>Remplissez ce formulaire pour devenir membre ou bénévole.</p>
 
     <form action="https://formspree.io/f/xkokrzkz" method="POST" style="display: flex; flex-direction: column; max-width: 400px; margin: 0 auto; gap: 15px; text-align: left;">
-        
-        <label>Nom complet :</label>
+<div></div> <label>
+            <input type="checkbox" name="interet" value="benevole">benevole
+        </label>
+        <label>
+            <input type="checkbox" name="interet" value="membre">membre
+        </label>
+    </div>
+        <label>Nom :</label>
         <input type="text" name="nom" placeholder="Votre nom" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+         <label>Prenom :</label>
+        <input type="text" name="prenom" placeholder="Votre prenom" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
 
         <label>Email :</label>
         <input type="email" name="email" placeholder="votre@email.com" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
